@@ -1,3 +1,4 @@
+//deletes token, redirects to homepage
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
       method: 'POST',
@@ -10,5 +11,5 @@ const logout = async () => {
       alert(response.statusText);
     }
   };
-  
+  //button functionality
   document.querySelector('#logout').addEventListener('click', logout); 

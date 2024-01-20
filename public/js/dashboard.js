@@ -10,7 +10,7 @@ const newFormHandler = async (event) => {
         content: content,
       
       };
-    
+    //Create blog
       const response = await fetch(`/api/blogs`, {
         method: 'POST',
         body: JSON.stringify(blogData),
@@ -31,7 +31,7 @@ const newFormHandler = async (event) => {
       alert('An error occurred while processing the form');
     }
   };
-  
+  //delete blog
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('blog-id')) {
       const id = event.target.getAttribute('blog-id');
@@ -50,7 +50,7 @@ const newFormHandler = async (event) => {
   //------------------
   
   
-  
+  //button functinality
   document
     .querySelector('.new-blog-form')
     .addEventListener('submit', newFormHandler);

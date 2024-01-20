@@ -1,13 +1,14 @@
 const commentForm = document.querySelector('.comment-form');
+//add functionality to submit button
 commentForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   
-  // Get the comment text and blog ID from the form
+  // get comment form content
   const remark = commentForm.querySelector('textarea[name="remark"]').value;
   const blogId = commentForm.querySelector('input[name="blogId"]').value;
 console.log(remark, blogId)
   try {
-    // Send a POST request to the server to add the comment
+    // send comment to backend
     const response = await fetch('/api/comments', {
       method: 'POST',
       body: JSON.stringify({ remark, blog_id: blogId }),
@@ -15,7 +16,7 @@ console.log(remark, blogId)
     });
 
     if (response.ok) {
-      // Refresh the page to show the new comment
+      // refresh page after submit to autoload new comment
       document.location.reload();
 
     } else {
@@ -24,7 +25,7 @@ console.log(remark, blogId)
       alert('Failed to add thiscomment');
     }
   } catch (err) {
-    // Handle any errors with an alert
+    //display errors
     alert('Failed to add mycomment');
     console.log(err)
 

@@ -1,16 +1,16 @@
-# <notetakerproject>
+# <techBlogProject>
 
 ## Description
 
-A note taking site to keep track of tasks and relevent details on a central DB.  Implimented using express.js to facilitate the central storage server.  
+A rudimentary blog, created mostly as a project to learn how to incorperate SQL and handlebars.  Puts inputs into models and those models into handlebars templates so it displays each post as an individual blog card.  Posts are also saved to a backend to be displayed later and from different access points.  Login/logout functionality is also acomplished with basic token creation/deletion.  
 
 ## Installation
 Open in web browser
 
-deployed at: https://peaceful-escarpment-39979-d8fd5e921977.herokuapp.com/notes
+deployed at: 
 ## Usage
 
-Open in web browser, press the 'get started' button.  Type notes into the applicable feilds, press the save button to save each note. Notes can be deleted with the big red X buttons next to them. 
+Open in web browser, 
 
 ## Credits
 

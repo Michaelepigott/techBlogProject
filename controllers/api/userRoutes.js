@@ -16,7 +16,7 @@ router.post('/', async (req, res) => {
     res.status(500).json(err);
   }
 });
-//Check usename and password
+//Check credentials
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { name: req.body.name } });
