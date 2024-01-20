@@ -7,10 +7,10 @@ A rudimentary blog, created mostly as a project to learn how to incorperate SQL 
 ## Installation
 Open in web browser
 
-deployed at: 
+deployed at: https://afternoon-savannah-74151-c50f599c73a4.herokuapp.com/
 ## Usage
 
-Open in web browser, 
+Open in web browser, click on signup button.  Sign up with username, email and password.  Create blogs by typing in relevent feilds and submitting.  comment by clicking on the link on posts and then entering your comment into the relevent feild ansd submitting.  Logout by pressing logout button.
 
 ## Credits
 
